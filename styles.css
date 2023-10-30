@@ -1,0 +1,278 @@
+@font-face {
+    font-family: Eina;
+    src: url(/fonts/Eina01-Regular.ttf);
+    
+}
+@font-face{
+    font-family: Eina2;
+    src: url(/fonts/Eina01-Bold.ttf);
+}
+
+:root{
+    --secondary : #0c1825;
+    --primary : #27323d;
+    --off-white : #f1f8ff;
+    --white : #ffffff;
+}
+*{
+   box-sizing: border-box;
+   font-family: eina;
+}
+body{
+    background-color: var(--off-white);
+    padding:0 200px 0 200px;
+    overflow: hidden;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 17px;
+}
+li a{
+    text-decoration: none;
+    color:var(--primary);
+    font-weight: 800;
+}
+.reg a{
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 17px;
+    font-family: Eina2;
+    position: relative;
+    right: -100%
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    position: static;
+
+    /* justify-content: space-evenly; */
+}
+
+.sign{
+    text-decoration: inherit;
+    color: inherit;
+
+    font-family: Eina2;
+padding: 17px;
+border: solid 1px var(--secondary);
+border-radius: 5px;
+font-size: 15px;
+position: absolute;
+right:32%;
+}
+.create{
+    text-decoration: inherit;
+    color: var(--white);
+    font-family: Eina2;
+    background-color: var(--secondary);
+padding: 17px;
+border-radius: 5px;
+font-size: 15px;
+position: absolute;
+right:20%;
+}
+.bolu{
+    padding-top:22%;
+    font-size: 60px;
+    font-family: Eina2;
+    font-weight: 900;
+    animation: text 1s ease-in  ;
+}
+.asher{
+    width: 60%;
+    font-size: 22px;
+    padding-bottom: 30px;
+    animation: text 1s ease-in  ;
+    
+}
+.apple{
+    padding: 20px;
+    background-color: var(--secondary);
+    color: var(--white);
+    font-weight: 800;
+    text-decoration: inherit;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.playstore{
+    padding: 20px;
+    background-color: var(--secondary);
+    color: var(--white);
+    font-weight: 800;
+    text-decoration: inherit;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.contents{
+    display: flex;
+}
+.man{
+    height: 600px;
+    width: 60%;
+    background-image: url(/images/businessman-talking-phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    border: solid white 10px;
+    position: relative;
+    top: 50px;
+    animation: float 8s ease-out infinite, zoom 2s ease;
+    /* animation: zoom 2s ease; */
+}
+
+.image1, .image2, .image3, .image4, .image5{
+    position: relative;
+}
+
+.image1, .image5{
+    right: 100px;
+    top: 100px;
+    animation: pix 2s ease-in;
+}
+
+.image5{
+    top: 180px
+}
+.image2, .image4{
+    left: 220px;
+    animation: pix 4s ease-in;
+}
+.image2{
+    top: 400px;
+}
+
+.image3{
+    top: 500px;
+    animation: pix 5s ease-in;
+    left: 150px;
+}
+
+@keyframes float {
+    50%{
+        transform: translateY(50px);
+    }
+    
+}
+
+@keyframes text {
+    0%{
+        display: block;
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+
+        opacity: 1;
+    }
+    
+}
+
+@keyframes pix {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    100%{
+
+    }
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(100%);
+    }
+    
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px)
+{
+    body{
+        padding: 0 20px 0 50px;
+    }
+
+.man{
+    position: relative;
+    right: 40px;
+    width: 80%;
+
+}
+
+.sign{
+    right: 25%;
+}
+.create{
+    right:10%;
+}
+    }
+
+@media only screen and (min-width: 1024px) and (max-width: 1124px){
+
+    body{
+        height: fit-content;
+    }
+.nav-items, .sign, .create{
+    display: none;
+
+}
+.contents{
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    text-align: center;
+
+}
+.bolu{
+    padding-top: 10px;
+}
+.asher{
+width: auto;
+}
+.man{
+    position: relative;
+    /* right: 40px; */
+    width: 70%;
+
+}
+}
+
+@media only screen and (min-width: 650px) and (max-width: 950px){
+
+    body{
+        height: fit-content;
+        padding: 0 10px 0 10px;
+    }
+    .nav-items, .sign, .create{
+        display: none;
+    
+    }
+    .contents{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text{
+        text-align: center;
+    
+    }
+    .bolu{
+        padding-top: 10px;
+    }
+    .asher{
+    width: auto;
+    }
+}
