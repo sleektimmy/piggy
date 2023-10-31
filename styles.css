@@ -1,11 +1,11 @@
 @font-face {
     font-family: Eina;
-    src: url(/fonts/Eina01-Regular.ttf);
+    src: url(./fonts/Eina01-Regular.ttf);
     
 }
 @font-face{
     font-family: Eina2;
-    src: url(/fonts/Eina01-Bold.ttf);
+    src: url(./fonts/Eina01-Bold.ttf);
 }
 
 :root{
@@ -116,7 +116,7 @@ right:20%;
 .man{
     height: 600px;
     width: 60%;
-    background-image: url(/images/businessman-talking-phone.jpg);
+    background-image: url(./images/businessman-talking-phone.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
