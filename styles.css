@@ -277,7 +277,6 @@ width: auto;
     }
 }
 
-
 @media (max-width:547px){
     .nav-items, .sign, .create{
         display: none;
@@ -292,7 +291,7 @@ width: auto;
         text-align: center;
     }
     .bolu{
-        font-size: 40px;
+        font-size: 35px;
     }
     .asher{
         font-size: 15px;
@@ -302,9 +301,39 @@ width: auto;
     }
     .apple, .playstore{
         padding: 10px;
+        padding-top: 10px;
         font-weight: 500;
     }
     .man{
         width: 100%;
+        height: 350px;
+    }
+
+    .image1, .image2, .image3, .image4, .image5{
+        width:120px;
+    }
+    .image1, .image5{
+        right: 60px;
+        top: 80px;
+    
+    }
+    
+    .image5{
+        top: 150px;
+        right:120px
+
+    }
+    .image2, .image4{
+        left: 70px;
+    
+    }
+    .image2{
+        top:200px;
+    }
+    
+    .image3{
+        top: 270px;
+  
+        left: 70px;
     }
 }
