@@ -21,7 +21,7 @@
 body{
     background-color: var(--off-white);
     padding:0 200px 0 200px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 nav ul{
     list-style: none;
